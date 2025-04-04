@@ -7,6 +7,12 @@ use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->withoutVite();
+        // Additional setup code can be added here
+    }
     /**
      * A basic test example.
      */
